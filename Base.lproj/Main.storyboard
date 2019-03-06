@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HideNSeek" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="metallic-bg1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1Ud-I6-UbS">
+                                <rect key="frame" x="-8" y="0.0" width="390" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="blue_btn.png" translatesAutoresizingMaskIntoConstraints="NO" id="hdc-3U-zri">
+                                <rect key="frame" x="86" y="232" width="202" height="202"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Ud-I6-UbS" firstAttribute="centerY" secondItem="hdc-3U-zri" secondAttribute="centerY" id="7dJ-F6-pjj"/>
+                            <constraint firstItem="1Ud-I6-UbS" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="GeG-Z8-TUP"/>
+                            <constraint firstItem="1Ud-I6-UbS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QH3-Oq-7CQ"/>
+                            <constraint firstItem="1Ud-I6-UbS" firstAttribute="centerX" secondItem="hdc-3U-zri" secondAttribute="centerX" id="Wu3-FO-qYr"/>
+                            <constraint firstItem="1Ud-I6-UbS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="ZBg-Kv-Rhp"/>
+                            <constraint firstItem="1Ud-I6-UbS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nVU-pr-3ZZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="light_img" destination="hdc-3U-zri" id="6r9-19-Oow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue_btn.png" width="200" height="200"/>
+        <image name="metallic-bg1.jpg" width="1920" height="1080"/>
+    </resources>
+</document>
